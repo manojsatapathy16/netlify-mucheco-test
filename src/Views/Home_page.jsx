@@ -416,7 +416,7 @@ function Home_page(props) {
                             {Array.isArray(testimonialData?.data) ? <>
                                 {testimonialData?.data?.map((each, key) => {
                                     return (
-                                        <div className="item">
+                                        <div className="item" key={key}>
                                             <div className="testimonial-item">
                                                 <div className="item-content basic">
                                                     <span><img src={require("../image/quote_portfolio.png")} className="quote_img" alt="image" /></span>

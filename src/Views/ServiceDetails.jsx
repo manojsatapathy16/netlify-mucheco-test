@@ -146,12 +146,12 @@ function ServiceDetails(props) {
         var btnText = document.getElementById("readmore");
         var short_description=document.getElementById("desc_short");
         var long_description=document.getElementById("desc_long");
-        if (btnText.innerHTML.trim() == 'Read More <i class="fal fa-long-arrow-right"></i>') {
-            btnText.innerHTML = 'Read less <i class="fal fa-long-arrow-right"></i>';
+        if (btnText.innerHTML.trim() == 'Read More <i className="fal fa-long-arrow-right"></i>') {
+            btnText.innerHTML = 'Read less <i className="fal fa-long-arrow-right"></i>';
             long_description.style.display = "block";
             short_description.style.display = "none";
-        } else if(btnText.innerHTML.trim() == 'Read less <i class="fal fa-long-arrow-right"></i>') {
-            btnText.innerHTML = 'Read More <i class="fal fa-long-arrow-right"></i>';
+        } else if(btnText.innerHTML.trim() == 'Read less <i className="fal fa-long-arrow-right"></i>') {
+            btnText.innerHTML = 'Read More <i className="fal fa-long-arrow-right"></i>';
             long_description.style.display = "none";
             short_description.style.display = "block";
         }
@@ -160,8 +160,8 @@ function ServiceDetails(props) {
         var btnText = document.getElementById("readmore");
         var short_description=document.getElementById("desc_short");
         var long_description=document.getElementById("desc_long");
-            if(btnText.innerHTML.trim() == 'Read less <i class="fal fa-long-arrow-right"></i>') {
-            btnText.innerHTML = 'Read More <i class="fal fa-long-arrow-right"></i>';
+            if(btnText.innerHTML.trim() == 'Read less <i className="fal fa-long-arrow-right"></i>') {
+            btnText.innerHTML = 'Read More <i className="fal fa-long-arrow-right"></i>';
             long_description.style.display = "none";
             short_description.style.display = "block";
         }
@@ -203,7 +203,7 @@ function ServiceDetails(props) {
                                                 <li>{detailsData?.data?.readmore?.lis[0]}</li>
                                                 <li>{detailsData?.data?.readmore?.lis[1]}</li>
                                                 <li>{detailsData?.data?.readmore?.lis[2]}</li>
-                                                <li>{detailsData?.data?.readmore?.lis[3]} </li>
+                                                <li>{detailsData?.data?.readmore?.lis[3]}</li>
                                                 <li>{detailsData?.data?.readmore?.lis[4]}</li>
                                                 <li>{detailsData?.data?.readmore?.lis[5]}</li>
                                             </ul>
@@ -416,10 +416,10 @@ function ServiceDetails(props) {
                         <div className="flow_items">
                         {/* {detailsData?.data?.process.map((i, key) => {
                             if (start >= 1 && start <= 3) {
-                                html += (start == 1) ? `<div class="row"><p>${i}</p>` : (start == 3) ? `<p>${i}</p></div>` : `<p>${i}</p>`;
+                                html += (start == 1) ? `<div className="row"><p>${i}</p>` : (start == 3) ? `<p>${i}</p></div>` : `<p>${i}</p>`;
                               }
                               if (start >= 4 && start <= 6) {
-                                html += start == 4 ? `<div class="even-row"><p>${i}</p>` : start == 6 ? `<p>${i}</p></div>` : `<p>${i}</p>`;
+                                html += start == 4 ? `<div className="even-row"><p>${i}</p>` : start == 6 ? `<p>${i}</p></div>` : `<p>${i}</p>`;
                               }
                               if (start == 6) {
                                 setStart(1);

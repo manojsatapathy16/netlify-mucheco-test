@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
     AOS.init();
   }, [])
-  return  <Router_app />
+  return  <Router_app />;
  
 
 {/* <BrowserRouter basename={basename}>
