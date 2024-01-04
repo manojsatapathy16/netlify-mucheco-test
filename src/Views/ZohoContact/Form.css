@@ -1,0 +1,47 @@
+/* $Id: $ */
+
+.zf-tempContDiv {
+	position: relative;
+	height: 100%;
+  }
+  .zf-subContWrap.zf-topAlign ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+.zf-tempFrmWrapper.zf-small {
+	width: calc(50% - 10px);
+}
+.zf-tempFrmWrapper.zf-small:last-child {
+	width: 100%;
+}
+.zf-tempContDiv span {
+	display: block;
+	/* width: 100%; */
+}
+.zf-tempContDiv span input {
+	width: 100%;
+}
+.zf-phwrapper {
+	display: flex;
+	gap:2px;
+  }
+  .zf-phwrapper span:first-child{
+	width: 150px;
+  }
+  .zf-phwrapper span:nth-child(2){
+	width: calc(100% - 100px);
+  }
+  .zf-tempContDiv .error {
+	left: 30px;
+  }
+  .flag{
+	margin-right: 10px;
+  }
+  .zf-fmFooter {
+	text-align: center;
+  }
+  select#international_PhoneNumber_countrycodeval {
+    padding: 0;
+    padding-left: 30px;
+}

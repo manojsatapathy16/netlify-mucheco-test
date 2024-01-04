@@ -1,0 +1,35 @@
+.list-unstyled  { 
+    height: 60px;
+    width: 100%;
+    background-color: rgba(20, 29, 56, 0.05);
+    font-size: 20px;
+font-weight: 500;
+font-family: var(--rajdhani);
+transition: all .3s;
+    
+}
+.list-unstyled li{
+    padding: 14px 0px;
+}
+.list-unstyled ul li { padding: 0px 30px;
+    z-index: 2;
+    width: 100%;
+    margin-bottom: 0;
+    margin: 0; }
+/* .list-unstyled ul li:not(.init) { float: left; width: 130px;  background: #ddd; } */
+.list-unstyled ul li:not(.init):hover, ul li.selected:not(.init) { background: #09f; }
+.list-unstyled ul li.init { cursor: pointer; }
+
+a#submit { z-index: 1; }
+.list-unstyled ul {
+	position: absolute;
+	top: 62px;
+	left: 0;
+	height: 200px;
+	overflow: auto;
+    width: 200px;
+display: block;
+background: #fff;
+z-index: 9;
+	/* width: 200px; */
+}

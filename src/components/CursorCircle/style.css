@@ -1,0 +1,87 @@
+body {
+    /* background-color: #171717; */
+    cursor: none;
+  }
+  
+  .app {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cursor {
+    position: fixed;
+    /**
+    left & top make sure that the cursor is 
+    aligned with the tip of the mouse cursor
+    **/
+    left: 0;
+    top: 0;
+    pointer-events: none;
+  }
+  
+  .cursor--small {
+    width: 20px;
+    height: 20px;
+    /* left: -2.5px;
+    top: -2.5px; */
+    left: -9px;
+top: -8px;
+    border-radius: 50%;
+    z-index: 11000;
+    /* background: green; */
+    border: 2px solid rgb(250, 104, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cursor--canvas {
+    width: 100vw;
+    height: 100vh;
+    z-index: 12000;
+  }
+  
+  .settings-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+  .settings-icon__line {
+    stroke: #fff;
+    stroke-width: 5px;
+    transition: all 0.2s ease 0.05s;
+  }
+  .settings-icon__rect {
+    stroke: #fff;
+    fill: #171717;
+    stroke-width: 5px;
+    transition: all 0.2s ease 0.05s;
+  }
+  
+  .settings-icon:hover .settings-icon__line,
+  .settings-icon:hover .settings-icon__rect {
+    stroke: #ff0000;
+    transition: all 0.2s ease 0.05s;
+  }
+  
+  .settings-icon:hover .settings-icon__group--1 .settings-icon__rect {
+    transform: translateY(20px);
+  }
+  
+  .settings-icon:hover .settings-icon__group--2 .settings-icon__rect {
+    transform: translateY(-20px);
+  }
+  
+  .settings-icon:hover .settings-icon__group--3 .settings-icon__rect {
+    transform: translateY(25px);
+  }
+  .cursor--small--inner{
+    height: 3px;
+    width: 3px;
+    background: #3ac0eb;
+    border-radius: 50%;
+  }
+  
