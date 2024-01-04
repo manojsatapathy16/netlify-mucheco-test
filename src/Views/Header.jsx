@@ -128,7 +128,7 @@ function Header(props) {
                                 {/* <!-- Main Menu --> */}
                                 <nav className="main-menu">
                                     <ul>
-                                        <li className="menu-item has-children" id='has-children1'><NavLink to='/about'>About us</NavLink><span className='has-children-arrow'><i className="fas fa-chevron-down"></i></span>
+                                        <li className="menu-item has-children" id='has-children1'><NavLink to='/about'>About uss</NavLink><span className='has-children-arrow'><i className="fas fa-chevron-down"></i></span>
                                             <ul className="sub-menu sub-menu_about">
                                                 <li><NavLink to='/about/why-choose-us'><img src={require("../image/menu_icons/choose-us.png")} alt="" /> Why Choose Us</NavLink></li>
                                                 <li><NavLink to='/about/our-delivery-process'><img src={require("../image/menu_icons/about.png")} alt="" /> Our Delivery Process</NavLink></li>
